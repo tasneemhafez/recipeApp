@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Pompiere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Recipe App</a>
+                <form class="forma d-flex" role="search">
+                    <input class="searchBox form-control search me-2" type="search" placeholder="Search for recipes" aria-label="Search">
+                    <button class="searchBtn btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container mt-5">
+              <div class="searchmessage" style="display: block;">search your favourite recipes</div>
+              <div class="no-meals-message" style="display: none;">No meals found</div>
+
+                <div class="recipe-container row g-4 my-3"></div>
+            </div>
+            <div class="recipe-detelas">
+                <div class="loader ms-4" style="display: none;">Loading...</div>
+                <button class="close btn btn-danger ms-3 mt-1"><i class="fa-solid fa-x"></i></button>
+                <div class="recipe-detelas-content">
+                    <h1 class="recipe-title text-center"></h1>
+                    <h5></h5>
+                    <ul></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

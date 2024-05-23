@@ -1,0 +1,199 @@
+
+ body {
+    background-color: #6e5740;
+    color: white;
+}
+
+nav {
+    background-color: #38271c;
+}
+
+.navbar-brand {
+    color: rgb(221, 70, 70);
+    padding-left: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: rgb(221, 70, 70);
+}
+
+.forma {
+    padding-right: 20px;
+}
+
+.recipe-container {
+    width: 100%;
+}
+
+.recipe-container .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.layer {
+    background-color: #a81b1b36;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 92%;
+    height: 65%;
+    top: 130px;
+    padding-top: 50px;
+    opacity: 0;
+}
+
+.col-md-3 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.col-md-3:hover .layer {
+    top: 0;
+    opacity: 1;
+}
+
+.layer h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.dish {
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    color: #6e5740;
+    font-size: 20px;
+}
+
+.recipe-detelas {
+    display: none;
+    position: fixed;
+    background-color: #443525;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 111;
+    color: #fff;
+}
+
+.recipe-detelas-content {
+    position: relative;
+}
+.recipe-detelas-content h2{
+    font-size: 20px;
+    margin-right: 80px;
+}
+.recipe-detelas-content img {
+    width: 30% !important;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    border-radius: 20px;
+}
+
+.recipe-detelas-content p {
+    color: #fff;
+}
+
+.youtube {
+    position: absolute;
+    top: 82%;
+    right: 20px;
+}
+.no-meals-message {
+    color:#fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.searchmessage{
+    color:#fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+ /* Media Queries  */
+ @media screen and (max-width: 600px) {
+    .navbar-brand {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .forma {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .layer {
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    .recipe-detelas {
+        width: 90%;
+    }
+
+    .recipe-detelas-content img {
+        width: 50% !important;
+    }
+    .recipe-detelas-content  h2{
+        font-size: 20px;
+        margin-right: 60%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .col-md-3 {
+        width: 33.3333%;
+    }
+    .layer {
+        width: 93%;
+        height: 68%;
+        top: 0;
+}}
+
+@media screen and (max-width: 992px) {
+    .col-md-3 {
+        width: 50%;
+        .layer {
+            width: 94%;
+            height: 70%;
+            top: 0;}
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-3 {
+        width: 100%;
+    }
+    .layer {
+        width: 95%;
+        height: 90%;
+        top: 0;}
+}
